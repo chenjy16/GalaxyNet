@@ -41,6 +41,7 @@
       "shouldTranslate" : false
     },
     "About" : {
+      "extractionState" : "stale",
       "localizations" : {
         "zh-Hans" : {
           "stringUnit" : {
@@ -711,9 +712,6 @@
         }
       }
     },
-    "https://galaxy2net.net/" : {
-
-    },
     "https://sing-box.sagernet.org/" : {
       "extractionState" : "stale",
       "localizations" : {
@@ -1068,9 +1066,6 @@
           }
         }
       }
-    },
-    "Official website" : {
-
     },
     "Ok" : {
       "localizations" : {

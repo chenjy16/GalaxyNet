@@ -117,34 +117,6 @@ public struct SettingView: View {
                     .font(.headline)
             }
             
-            // 关于区域
-            #if !os(tvOS)
-                Section {
-                    // 文档链接
-                    LinkRow(
-                        title: "Official website",
-                        icon: "globe",
-                        url: ""
-                    )
-                    .contextMenu {
-                        LinkRow(
-                            title: "Documentation",
-                            icon: "doc.on.doc.fill",
-                            url: ""
-                        )
-                    }
-                    
-                    #if os(macOS)
-                        if Variant.useSystemExtension {
-                            makeNavigationLink(tab: .sponsors)
-                                .transition(.opacity)
-                        }
-                    #endif
-                } header: {
-                    Text(String(localized: "About"))
-                        .font(.headline)
-                }
-            #endif
         }
         .animation(.easeInOut, value: selectedTab)
     }
